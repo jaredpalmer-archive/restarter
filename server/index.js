@@ -66,7 +66,6 @@ server.get('*', (req, res) => {
         <title>Yolo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="${__PROD__ ? assets.main.css : 'assets/styles.css'}" />
       </head>
       <body>
         <div id="root"></div>

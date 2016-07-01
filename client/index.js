@@ -1,8 +1,6 @@
 import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import 'sanitize.css/sanitize.css'
-import './global.css'
 import configureStore from './store/configureStore'
 
 const store = configureStore()

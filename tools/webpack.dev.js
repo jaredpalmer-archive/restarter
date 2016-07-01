@@ -1,7 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const autoprefixer = require('autoprefixer')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CONFIG = require('./webpack.base')
 
 const { CLIENT_ENTRY, CLIENT_OUTPUT, PUBLIC_PATH } = CONFIG
@@ -23,7 +21,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    chunkFilename: '[name].chunk.js',
+    chunkFilename: '[chunkhash].js',
     publicPath: PUBLIC_PATH,
     path: CLIENT_OUTPUT
   },
@@ -44,13 +42,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?localIdentName=sp[name][local]__[hash:base64:5]&modules&importLoaders=1&sourceMap!postcss'),
-        exclude: /(node_modules)/
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss'),
-        include: /(node_modules)/
+        loader: 'radium!css'
       },
       {
         test: /\.json$/,
@@ -77,13 +69,11 @@ module.exports = {
       name: 'vendor',
       filename: 'vendor.js'
     }),
-    new ExtractTextPlugin('styles.css'),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
       '__DEV__': true
     })
   ],
-  postcss: () => [ autoprefixer ],
   standard: {
     // config options to be passed through to standard e.g.
     parser: 'babel-eslint'
