@@ -5,3 +5,7 @@ branches:
   only:
   - master
   - /^greenkeeper-/
+script:
+  - npm run coverage
+after_script:
+  - nyc report --reporter=lcov && codeclimate-test-reporter < ./coverage/lcov.info
