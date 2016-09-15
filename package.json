@@ -55,7 +55,7 @@
     "chai-http": "^3.0.0",
     "codeclimate-test-reporter": "^0.3.3",
     "mocha": "^3.0.2",
-    "nyc": "^7.0.0",
+    "nyc": "^8.3.0",
     "redbox-react": "^1.2.9",
     "standard": "^8.0.0",
     "standard-loader": "^4.0.0",
