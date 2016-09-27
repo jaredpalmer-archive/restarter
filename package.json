@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^7.0.0",
     "babel-plugin-istanbul": "^1.0.3",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
