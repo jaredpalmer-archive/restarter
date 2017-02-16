@@ -53,7 +53,7 @@
     "babel-plugin-istanbul": "^1.0.3",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
-    "codeclimate-test-reporter": "^0.3.3",
+    "codeclimate-test-reporter": "^0.4.1",
     "mocha": "^3.0.2",
     "nyc": "^7.0.0",
     "redbox-react": "^1.2.9",
