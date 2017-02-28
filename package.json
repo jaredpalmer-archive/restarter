@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "assets-webpack-plugin": "^3.4.0",
-    "autoprefixer": "^6.3.7",
+    "autoprefixer": "^6.7.6",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "6.13.2",
