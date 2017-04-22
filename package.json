@@ -59,7 +59,7 @@
     "redbox-react": "^1.2.9",
     "standard": "^8.0.0",
     "standard-loader": "^4.0.0",
-    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-middleware": "^1.10.2",
     "webpack-hot-middleware": "^2.12.1"
   },
   "nyc": {
